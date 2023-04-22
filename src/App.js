@@ -1,16 +1,16 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import VerCategorias from "./components/VerCategorias";
-import CreateCategoria from "./components/CreateCategoria";
-import EditarCategoria from "./components/EditarCategoria";
+import VerEstudiantes from "./components/VerEstudiantes";
+import CreateEstudiante from "./components/CreateEstudiante";
+import EditarEstudiante from "./components/EditarEstudiante";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element ={<VerCategorias/>} />
-          <Route path="/create" element ={<CreateCategoria/>} />
-          <Route path="/edit/:id" element ={<EditarCategoria/>} />
+          <Route path="/" element ={<VerEstudiantes/>} />
+          <Route path="/create" element ={<CreateEstudiante/>} />
+          <Route path="/edit/:id" element ={<EditarEstudiante/>} />
         </Routes>
       </BrowserRouter>
     </>
